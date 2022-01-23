@@ -38,9 +38,9 @@ radio_option = IntVar()
 radiobutton1 = Radiobutton(text="KM zu Meilen", value=1, variable=radio_option, command=radio_options)
 radiobutton2 = Radiobutton(text="Meter zu Fuß", value=2, variable=radio_option, command=radio_options)
 radiobutton3 = Radiobutton(text="KG zu Pfund", value=3, variable=radio_option, command=radio_options)
-radiobutton1.grid(column=1, row=0)
-radiobutton2.grid(column=1, row=1)
-radiobutton3.grid(column=1, row=2)
+radiobutton1.grid(column=1, row=0, sticky="w")
+radiobutton2.grid(column=1, row=1, sticky="w")
+radiobutton3.grid(column=1, row=2, sticky="w")
 
 # Entry
 entry_input = Entry(width=7)
